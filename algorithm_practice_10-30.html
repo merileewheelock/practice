@@ -1,0 +1,42 @@
+<script type="text/javascript">
+	
+// var str = "test";
+// var repeatLetters = [];
+// console.log(str)
+// function isUnique(){
+// 	var arr = str.split("")
+// 	console.log(arr)
+// 	for (var i = 0; i < arr.length; i++){
+// 		let currLetter = arr[i];
+// 		console.log(currLetter)
+// 		for (let j = 0; j < arr.length; j++){
+// 			console.log(j)
+// 			if (arr[i] == arr[j]){
+// 				repeatLetters.push(i);
+// 				console.log(i)
+// 			}
+// 		}
+// 	}
+// 	console.log(repeatLetters)
+// }
+// isUnique(str)
+
+
+
+// You have a file with which has a string of characters, identify the count of a certain character. Give Algorithm and system calls you might use. 
+
+function countLetters(string, letter){
+	var count = 0;
+	for (let i = 0; i < string.length; i++){
+		if (string[i] == letter){
+			count += 1;
+		}
+	}
+	console.log(count);
+}
+countLetters('this is a test', 'a')
+
+
+// An array just contains 1s, 2s, and 3s. Sort the array.   
+
+</script>
