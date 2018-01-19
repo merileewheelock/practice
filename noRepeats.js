@@ -13,4 +13,5 @@ function noRepeats(str){
   return newStr;
   console.log(alphabet);
 }
+
 $("#container").text('here' + noRepeats("hello"));
