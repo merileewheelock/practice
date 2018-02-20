@@ -33,6 +33,62 @@
 		$('#textID').text('Here: ' + reverse('hello'));
 
 
+		function revAgain(str){
+			var revStr = '';
+			for (let i = str.length-1; i >= 0; i--){
+				revStr = revStr + str[i]
+			}
+			return revStr;
+		}
+		console.log("reverseAgain: " + revAgain("hello"))
+
+
+		function largestNum(arr){
+			var largestNum = 0
+			for (let i = 0; i < arr.length; i++){
+				if (arr[i] > largestNum){
+					largestNum = arr[i];
+				}
+			}
+			return largestNum;
+		}
+		console.log("largest num: " + largestNum([3,8,5,2,10,5]))
+
+
+		function longestWord(str){
+			var longWord = '';
+			var longWordLength = 0;
+			var splitStr = str.split(' ');
+			// console.log(splitStr)
+			for (let i = 0; i < splitStr.length; i++){
+				if (splitStr[i].length > longWordLength){
+					longWordLength = splitStr[i].length;
+					longWord = splitStr[i];
+				}
+			}
+			return longWord;
+		}
+		console.log(longestWord("I am looking for the longest word in this string."))
+
+
+		function noRepeats(str){
+		  var alphabet = {}
+		  var newStr = '';
+		  for (let i = 0; i < str.length; i++){
+		    
+		    if (alphabet[(str.charAt(i))] == 1){
+		      continue;
+		    }else{
+		      alphabet[(str.charAt(i))] = 1;
+		      newStr = newStr + str.charAt(i)
+		    }
+		  }
+		  return newStr;
+		  console.log(alphabet);
+		}
+		console.log("no repeats: " + noRepeats("hello"))
+
+
 		// Constructor function (JS version of a class)
 		function Person(first, last, age, gender, interests){
 			this.name = {
